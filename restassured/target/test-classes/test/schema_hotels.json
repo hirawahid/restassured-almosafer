@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "facilityCategory": {
+      "type": "object",
+      "patternProperties": {
+        "^\\d+$": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "nameEn": {
+              "type": "string"
+            },
+            "nameAr": {
+              "type": "string"
+            },
+            "active": {
+              "type": "boolean"
+            },
+            "rank": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "nameEn",
+            "nameAr",
+            "active",
+            "rank"
+          ]
+        }
+      },
+      "minProperties": 1
+    }
+  },
+  "required": [
+    "facilityCategory"
+  ]
+}
