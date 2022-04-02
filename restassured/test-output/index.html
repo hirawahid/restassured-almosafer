@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-RestAssured" class="navigator-link">
+              <span class="suite-name border-failed">RestAssured</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-RestAssured" class="navigator-link ">
+                    <span>D:\Documents\restassured\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-RestAssured" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-RestAssured" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-RestAssured" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-RestAssured" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-RestAssured" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-RestAssured" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods, 1 failed,   24 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RestAssured" class="hide-methods failed suite-RestAssured"> (hide)</a> <!-- hide-methods failed suite-RestAssured -->
+                      <a href="#" panel-name="suite-RestAssured" class="show-methods failed suite-RestAssured"> (show)</a> <!-- show-methods failed suite-RestAssured -->
+                    </span>
+                    <div class="method-list-content failed suite-RestAssured">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_invalid_departureFrom_validation( )">flights_invalid_departureFrom_validation( )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RestAssured -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-RestAssured" class="hide-methods passed suite-RestAssured"> (hide)</a> <!-- hide-methods passed suite-RestAssured -->
+                      <a href="#" panel-name="suite-RestAssured" class="show-methods passed suite-RestAssured"> (show)</a> <!-- show-methods passed suite-RestAssured -->
+                    </span>
+                    <div class="method-list-content passed suite-RestAssured">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_content_type_header_validation(io.restassured.internal.RestAssuredResponseImpl@667dcaad)">flights_content_type_header_validation(io.restassured.internal.RestAssuredResponseImpl@667dcaad)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_invalid_departureFrom_validation(1987-04-34)">flights_invalid_departureFrom_validation(1987-04-34)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_invalid_departureFrom_validation(2022-0s-34)">flights_invalid_departureFrom_validation(2022-0s-34)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_invalid_departureFrom_validation(2022-0)">flights_invalid_departureFrom_validation(2022-0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_invalid_originID_validation(RUH#)">flights_invalid_originID_validation(RUH#)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_invalid_originID_validation(ruh)">flights_invalid_originID_validation(ruh)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_invalid_originID_validation(2022)">flights_invalid_originID_validation(2022)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_invalid_originID_validation(abcd )">flights_invalid_originID_validation(abcd )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_json_schema_validation({&quot;pax&quot;:{&quot;adult&quot;:1,&quot;infant&quot;:0,&quot;child&quot;:0},&quot;cabin&quot;:&quot;Economy&quot;,&quot;stops&quot;:[],&quot;airline&quot;:[],&quot;timeslots&quot;:{},&quot;le...)">flights_json_schema_validation({"pax":{"adult":1,"infant":0,"child":0},"cabin":"Economy","stops":[],"airline":[],"timeslots":{},"le...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_response_not_null_validation(io.restassured.internal.RestAssuredResponseImpl@3f45dfec)">flights_response_not_null_validation(io.restassured.internal.RestAssuredResponseImpl@3f45dfec)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_response_time_validation(io.restassured.internal.RestAssuredResponseImpl@2e0516a3)">flights_response_time_validation(io.restassured.internal.RestAssuredResponseImpl@2e0516a3)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_status_code_validation(io.restassured.internal.RestAssuredResponseImpl@45dc7be)">flights_status_code_validation(io.restassured.internal.RestAssuredResponseImpl@45dc7be)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_verify_date_format_response(io.restassured.internal.RestAssuredResponseImpl@66e12c3b)">flights_verify_date_format_response(io.restassured.internal.RestAssuredResponseImpl@66e12c3b)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_verify_price_format_response(io.restassured.internal.RestAssuredResponseImpl@197d5a87)">flights_verify_price_format_response(io.restassured.internal.RestAssuredResponseImpl@197d5a87)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.flights_test" class="method navigator-link" hash-for-method="flights_verify_updatedAt_format_response(io.restassured.internal.RestAssuredResponseImpl@3df04fa1)">flights_verify_updatedAt_format_response(io.restassured.internal.RestAssuredResponseImpl@3df04fa1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.test_hotels" class="method navigator-link" hash-for-method="hotels_content_type_header_validation(io.restassured.internal.RestAssuredResponseImpl@1a3c4b3e)">hotels_content_type_header_validation(io.restassured.internal.RestAssuredResponseImpl@1a3c4b3e)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.test_hotels" class="method navigator-link" hash-for-method="hotels_json_schema_validation">hotels_json_schema_validation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.test_hotels" class="method navigator-link" hash-for-method="hotels_response_not_null_validation(io.restassured.internal.RestAssuredResponseImpl@186dcb05)">hotels_response_not_null_validation(io.restassured.internal.RestAssuredResponseImpl@186dcb05)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.test_hotels" class="method navigator-link" hash-for-method="hotels_response_time_validation(io.restassured.internal.RestAssuredResponseImpl@2e4b5da1)">hotels_response_time_validation(io.restassured.internal.RestAssuredResponseImpl@2e4b5da1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.test_hotels" class="method navigator-link" hash-for-method="hotels_status_code_validation(io.restassured.internal.RestAssuredResponseImpl@5da3f32a)">hotels_status_code_validation(io.restassured.internal.RestAssuredResponseImpl@5da3f32a)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.test_hotels" class="method navigator-link" hash-for-method="hotels_validate_invalid_url">hotels_validate_invalid_url</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.test_hotels" class="method navigator-link" hash-for-method="hotels_validate_post_not_successful">hotels_validate_post_not_successful</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.test_hotels" class="method navigator-link" hash-for-method="hotels_validate_response_without_token">hotels_validate_response_without_token</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RestAssured" title="test.test_hotels" class="method navigator-link" hash-for-method="hotels_validate_with_invalid_token">hotels_validate_with_invalid_token</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-RestAssured -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-RestAssured" class="panel RestAssured">
+          <div class="suite-RestAssured-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.flights_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_invalid_departureFrom_validation( )">
+                  </a> <!-- flights_invalid_departureFrom_validation( ) -->
+                  <span class="method-name">flights_invalid_departureFrom_validation</span>
+                  <span class="parameters">( )</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError: expected:&lt;200&gt; but was:&lt;400&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:199)
+	at junit.framework.Assert.assertEquals(Assert.java:205)
+	at test.flights_test.flights_invalid_departureFrom_validation(flights_test.java:187)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestAssured-class-failed -->
+          <div class="suite-RestAssured-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.test_hotels</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="hotels_content_type_header_validation(io.restassured.internal.RestAssuredResponseImpl@1a3c4b3e)">
+                  </a> <!-- hotels_content_type_header_validation(io.restassured.internal.RestAssuredResponseImpl@1a3c4b3e) -->
+                  <span class="method-name">hotels_content_type_header_validation</span>
+                  <span class="parameters">(io.restassured.internal.RestAssuredResponseImpl@1a3c4b3e)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hotels_json_schema_validation">
+                  </a> <!-- hotels_json_schema_validation -->
+                  <span class="method-name">hotels_json_schema_validation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hotels_response_not_null_validation(io.restassured.internal.RestAssuredResponseImpl@186dcb05)">
+                  </a> <!-- hotels_response_not_null_validation(io.restassured.internal.RestAssuredResponseImpl@186dcb05) -->
+                  <span class="method-name">hotels_response_not_null_validation</span>
+                  <span class="parameters">(io.restassured.internal.RestAssuredResponseImpl@186dcb05)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hotels_response_time_validation(io.restassured.internal.RestAssuredResponseImpl@2e4b5da1)">
+                  </a> <!-- hotels_response_time_validation(io.restassured.internal.RestAssuredResponseImpl@2e4b5da1) -->
+                  <span class="method-name">hotels_response_time_validation</span>
+                  <span class="parameters">(io.restassured.internal.RestAssuredResponseImpl@2e4b5da1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hotels_status_code_validation(io.restassured.internal.RestAssuredResponseImpl@5da3f32a)">
+                  </a> <!-- hotels_status_code_validation(io.restassured.internal.RestAssuredResponseImpl@5da3f32a) -->
+                  <span class="method-name">hotels_status_code_validation</span>
+                  <span class="parameters">(io.restassured.internal.RestAssuredResponseImpl@5da3f32a)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hotels_validate_invalid_url">
+                  </a> <!-- hotels_validate_invalid_url -->
+                  <span class="method-name">hotels_validate_invalid_url</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hotels_validate_post_not_successful">
+                  </a> <!-- hotels_validate_post_not_successful -->
+                  <span class="method-name">hotels_validate_post_not_successful</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hotels_validate_response_without_token">
+                  </a> <!-- hotels_validate_response_without_token -->
+                  <span class="method-name">hotels_validate_response_without_token</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hotels_validate_with_invalid_token">
+                  </a> <!-- hotels_validate_with_invalid_token -->
+                  <span class="method-name">hotels_validate_with_invalid_token</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestAssured-class-passed -->
+          <div class="suite-RestAssured-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.flights_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_content_type_header_validation(io.restassured.internal.RestAssuredResponseImpl@667dcaad)">
+                  </a> <!-- flights_content_type_header_validation(io.restassured.internal.RestAssuredResponseImpl@667dcaad) -->
+                  <span class="method-name">flights_content_type_header_validation</span>
+                  <span class="parameters">(io.restassured.internal.RestAssuredResponseImpl@667dcaad)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_invalid_departureFrom_validation(1987-04-34)">
+                  </a> <!-- flights_invalid_departureFrom_validation(1987-04-34) -->
+                  <span class="method-name">flights_invalid_departureFrom_validation</span>
+                  <span class="parameters">(1987-04-34)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_invalid_departureFrom_validation(2022-0s-34)">
+                  </a> <!-- flights_invalid_departureFrom_validation(2022-0s-34) -->
+                  <span class="method-name">flights_invalid_departureFrom_validation</span>
+                  <span class="parameters">(2022-0s-34)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_invalid_departureFrom_validation(2022-0)">
+                  </a> <!-- flights_invalid_departureFrom_validation(2022-0) -->
+                  <span class="method-name">flights_invalid_departureFrom_validation</span>
+                  <span class="parameters">(2022-0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_invalid_originID_validation(RUH#)">
+                  </a> <!-- flights_invalid_originID_validation(RUH#) -->
+                  <span class="method-name">flights_invalid_originID_validation</span>
+                  <span class="parameters">(RUH#)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_invalid_originID_validation(ruh)">
+                  </a> <!-- flights_invalid_originID_validation(ruh) -->
+                  <span class="method-name">flights_invalid_originID_validation</span>
+                  <span class="parameters">(ruh)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_invalid_originID_validation(2022)">
+                  </a> <!-- flights_invalid_originID_validation(2022) -->
+                  <span class="method-name">flights_invalid_originID_validation</span>
+                  <span class="parameters">(2022)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_invalid_originID_validation(abcd )">
+                  </a> <!-- flights_invalid_originID_validation(abcd ) -->
+                  <span class="method-name">flights_invalid_originID_validation</span>
+                  <span class="parameters">(abcd )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_json_schema_validation({&quot;pax&quot;:{&quot;adult&quot;:1,&quot;infant&quot;:0,&quot;child&quot;:0},&quot;cabin&quot;:&quot;Economy&quot;,&quot;stops&quot;:[],&quot;airline&quot;:[],&quot;timeslots&quot;:{},&quot;le...)">
+                  </a> <!-- flights_json_schema_validation({"pax":{"adult":1,"infant":0,"child":0},"cabin":"Economy","stops":[],"airline":[],"timeslots":{},"le...) -->
+                  <span class="method-name">flights_json_schema_validation</span>
+                  <span class="parameters">({"pax":{"adult":1,"infant":0,"child":0},"cabin":"Economy","stops":[],"airline":[],"timeslots":{},"leg":[{"originId":"RUH","departureFrom":"2022-04-03","destinationId":"JED","departureTo":"2022-04-07"}],"airports":{}})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_response_not_null_validation(io.restassured.internal.RestAssuredResponseImpl@3f45dfec)">
+                  </a> <!-- flights_response_not_null_validation(io.restassured.internal.RestAssuredResponseImpl@3f45dfec) -->
+                  <span class="method-name">flights_response_not_null_validation</span>
+                  <span class="parameters">(io.restassured.internal.RestAssuredResponseImpl@3f45dfec)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_response_time_validation(io.restassured.internal.RestAssuredResponseImpl@2e0516a3)">
+                  </a> <!-- flights_response_time_validation(io.restassured.internal.RestAssuredResponseImpl@2e0516a3) -->
+                  <span class="method-name">flights_response_time_validation</span>
+                  <span class="parameters">(io.restassured.internal.RestAssuredResponseImpl@2e0516a3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_status_code_validation(io.restassured.internal.RestAssuredResponseImpl@45dc7be)">
+                  </a> <!-- flights_status_code_validation(io.restassured.internal.RestAssuredResponseImpl@45dc7be) -->
+                  <span class="method-name">flights_status_code_validation</span>
+                  <span class="parameters">(io.restassured.internal.RestAssuredResponseImpl@45dc7be)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_verify_date_format_response(io.restassured.internal.RestAssuredResponseImpl@66e12c3b)">
+                  </a> <!-- flights_verify_date_format_response(io.restassured.internal.RestAssuredResponseImpl@66e12c3b) -->
+                  <span class="method-name">flights_verify_date_format_response</span>
+                  <span class="parameters">(io.restassured.internal.RestAssuredResponseImpl@66e12c3b)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_verify_price_format_response(io.restassured.internal.RestAssuredResponseImpl@197d5a87)">
+                  </a> <!-- flights_verify_price_format_response(io.restassured.internal.RestAssuredResponseImpl@197d5a87) -->
+                  <span class="method-name">flights_verify_price_format_response</span>
+                  <span class="parameters">(io.restassured.internal.RestAssuredResponseImpl@197d5a87)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flights_verify_updatedAt_format_response(io.restassured.internal.RestAssuredResponseImpl@3df04fa1)">
+                  </a> <!-- flights_verify_updatedAt_format_response(io.restassured.internal.RestAssuredResponseImpl@3df04fa1) -->
+                  <span class="method-name">flights_verify_updatedAt_format_response</span>
+                  <span class="parameters">(io.restassured.internal.RestAssuredResponseImpl@3df04fa1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestAssured-class-passed -->
+        </div> <!-- panel RestAssured -->
+        <div panel-name="test-xml-RestAssured" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Documents\restassured\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;RestAssured&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ALL TESTS&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.flights_test&quot;/&gt;
+      &lt;class name=&quot;test.test_hotels&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ALL TESTS --&gt;
+&lt;/suite&gt; &lt;!-- RestAssured --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-RestAssured" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for RestAssured</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ALL TESTS (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-RestAssured" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for RestAssured</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-RestAssured" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for RestAssured</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_RestAssured');
+function tableData_RestAssured() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'flights_invalid_departureFrom_validation')
+data.setCell(0, 2, 'test.flights_test')
+data.setCell(0, 3, 6388);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'hotels_validate_post_not_successful')
+data.setCell(1, 2, 'test.test_hotels')
+data.setCell(1, 3, 6048);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'flights_json_schema_validation')
+data.setCell(2, 2, 'test.flights_test')
+data.setCell(2, 3, 2143);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'hotels_json_schema_validation')
+data.setCell(3, 2, 'test.test_hotels')
+data.setCell(3, 3, 1716);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'hotels_validate_invalid_url')
+data.setCell(4, 2, 'test.test_hotels')
+data.setCell(4, 3, 1438);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'flights_invalid_originID_validation')
+data.setCell(5, 2, 'test.flights_test')
+data.setCell(5, 3, 1248);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'flights_invalid_originID_validation')
+data.setCell(6, 2, 'test.flights_test')
+data.setCell(6, 3, 1235);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'flights_invalid_originID_validation')
+data.setCell(7, 2, 'test.flights_test')
+data.setCell(7, 3, 1232);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'hotels_validate_with_invalid_token')
+data.setCell(8, 2, 'test.test_hotels')
+data.setCell(8, 3, 850);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'flights_invalid_departureFrom_validation')
+data.setCell(9, 2, 'test.flights_test')
+data.setCell(9, 3, 828);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'hotels_validate_response_without_token')
+data.setCell(10, 2, 'test.test_hotels')
+data.setCell(10, 3, 810);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'flights_invalid_departureFrom_validation')
+data.setCell(11, 2, 'test.flights_test')
+data.setCell(11, 3, 769);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'flights_invalid_departureFrom_validation')
+data.setCell(12, 2, 'test.flights_test')
+data.setCell(12, 3, 765);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'flights_invalid_originID_validation')
+data.setCell(13, 2, 'test.flights_test')
+data.setCell(13, 3, 748);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'flights_content_type_header_validation')
+data.setCell(14, 2, 'test.flights_test')
+data.setCell(14, 3, 159);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'hotels_response_not_null_validation')
+data.setCell(15, 2, 'test.test_hotels')
+data.setCell(15, 3, 18);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'flights_verify_date_format_response')
+data.setCell(16, 2, 'test.flights_test')
+data.setCell(16, 3, 9);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'flights_response_time_validation')
+data.setCell(17, 2, 'test.flights_test')
+data.setCell(17, 3, 9);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'flights_response_not_null_validation')
+data.setCell(18, 2, 'test.flights_test')
+data.setCell(18, 3, 9);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'flights_verify_price_format_response')
+data.setCell(19, 2, 'test.flights_test')
+data.setCell(19, 3, 7);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'hotels_content_type_header_validation')
+data.setCell(20, 2, 'test.test_hotels')
+data.setCell(20, 3, 6);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'flights_status_code_validation')
+data.setCell(21, 2, 'test.flights_test')
+data.setCell(21, 3, 5);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'flights_verify_updatedAt_format_response')
+data.setCell(22, 2, 'test.flights_test')
+data.setCell(22, 3, 4);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'hotels_status_code_validation')
+data.setCell(23, 2, 'test.test_hotels')
+data.setCell(23, 3, 4);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'hotels_response_time_validation')
+data.setCell(24, 2, 'test.test_hotels')
+data.setCell(24, 3, 3);
+window.suiteTableData['RestAssured']= { tableData: data, tableDiv: 'times-div-RestAssured'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <div id="times-div-RestAssured">
+              </div> <!-- times-div-RestAssured -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-RestAssured" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for RestAssured</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-RestAssured" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-RestAssured" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.flights_test</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">flights_content_type_header_validation(io.restassured.internal.RestAssuredResponseImpl@667dcaad)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flights_invalid_departureFrom_validation(2022-0s-34)</span>
+                <span class="method-start">349 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flights_invalid_departureFrom_validation(2022-0)</span>
+                <span class="method-start">6747 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flights_invalid_departureFrom_validation(1987-04-34)</span>
+                <span class="method-start">7523 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">flights_invalid_departureFrom_validation( )</span>
+                <span class="method-start">8301 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flights_invalid_originID_validation(ruh)</span>
+                <span class="method-start">9146 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flights_invalid_originID_validation(2022)</span>
+                <span class="method-start">10385 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flights_invalid_originID_validation(RUH#)</span>
+                <span class="method-start">11139 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flights_invalid_originID_validation(abcd )</span>
+                <span class="method-start">12399 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flights_json_schema_validation({"pax":{"adult":1,"infant":0,"child":0},"cabin":"Economy","stops":[],"airline":[],"timeslots":{},"le...)</span>
+                <span class="method-start">13656 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flights_response_not_null_validation(io.restassured.internal.RestAssuredResponseImpl@3f45dfec)</span>
+                <span class="method-start">17137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flights_response_time_validation(io.restassured.internal.RestAssuredResponseImpl@2e0516a3)</span>
+                <span class="method-start">17959 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flights_status_code_validation(io.restassured.internal.RestAssuredResponseImpl@45dc7be)</span>
+                <span class="method-start">18916 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flights_verify_date_format_response(io.restassured.internal.RestAssuredResponseImpl@66e12c3b)</span>
+                <span class="method-start">20143 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flights_verify_price_format_response(io.restassured.internal.RestAssuredResponseImpl@197d5a87)</span>
+                <span class="method-start">20954 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">flights_verify_updatedAt_format_response(io.restassured.internal.RestAssuredResponseImpl@3df04fa1)</span>
+                <span class="method-start">22057 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.test_hotels</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">hotels_content_type_header_validation(io.restassured.internal.RestAssuredResponseImpl@1a3c4b3e)</span>
+                <span class="method-start">23209 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hotels_json_schema_validation</span>
+                <span class="method-start">23222 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hotels_response_not_null_validation(io.restassured.internal.RestAssuredResponseImpl@186dcb05)</span>
+                <span class="method-start">26565 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hotels_response_time_validation(io.restassured.internal.RestAssuredResponseImpl@2e4b5da1)</span>
+                <span class="method-start">27868 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hotels_status_code_validation(io.restassured.internal.RestAssuredResponseImpl@5da3f32a)</span>
+                <span class="method-start">29154 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hotels_validate_invalid_url</span>
+                <span class="method-start">29162 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hotels_validate_post_not_successful</span>
+                <span class="method-start">30604 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hotels_validate_response_without_token</span>
+                <span class="method-start">36656 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">hotels_validate_with_invalid_token</span>
+                <span class="method-start">37470 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
