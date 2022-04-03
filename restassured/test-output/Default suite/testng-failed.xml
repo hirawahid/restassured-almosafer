@@ -5,7 +5,7 @@
     <classes>
       <class name="test.flights_test">
         <methods>
-          <include name="flights_invalid_departureFrom_validation" invocation-numbers="3"/>
+          <include name="flights_verify_errors_empty_body"/>
         </methods>
       </class> <!-- test.flights_test -->
     </classes>
