@@ -1,90 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="25" passed="24" failed="1" skipped="0">
+<testng-results ignored="0" total="38" passed="37" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-03T02:25:04 PKT" name="RestAssured" finished-at="2022-04-03T02:25:53 PKT" duration-ms="49235">
+  <suite started-at="2022-04-03T21:25:10 PKT" name="RestAssured" finished-at="2022-04-03T21:26:00 PKT" duration-ms="50395">
     <groups>
     </groups>
-    <test started-at="2022-04-03T02:25:04 PKT" name="ALL TESTS" finished-at="2022-04-03T02:25:53 PKT" duration-ms="49235">
+    <test started-at="2022-04-03T21:25:10 PKT" name="ALL TESTS" finished-at="2022-04-03T21:26:00 PKT" duration-ms="50395">
       <class name="test.test_hotels">
-        <test-method signature="hotels_content_type_header_validation(io.restassured.response.Response)[pri:0, instance:test.test_hotels@7fcf2fc1]" started-at="2022-04-03T02:25:38 PKT" name="hotels_content_type_header_validation" data-provider="sanity" finished-at="2022-04-03T02:25:38 PKT" duration-ms="6" status="PASS">
+        <test-method signature="hotels_content_type_header_validation(io.restassured.response.Response)[pri:0, instance:test.test_hotels@488d1cd7]" started-at="2022-04-03T21:25:51 PKT" name="hotels_content_type_header_validation" data-provider="sanity" finished-at="2022-04-03T21:25:51 PKT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@1a3c4b3e]]>
+                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@762f8ff6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hotels_content_type_header_validation -->
-        <test-method signature="hotels_json_schema_validation()[pri:0, instance:test.test_hotels@7fcf2fc1]" started-at="2022-04-03T02:25:38 PKT" name="hotels_json_schema_validation" finished-at="2022-04-03T02:25:40 PKT" duration-ms="1716" status="PASS">
+        <test-method signature="hotels_json_schema_validation()[pri:0, instance:test.test_hotels@488d1cd7]" started-at="2022-04-03T21:25:51 PKT" name="hotels_json_schema_validation" finished-at="2022-04-03T21:25:53 PKT" duration-ms="1952" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hotels_json_schema_validation -->
-        <test-method signature="hotels_response_not_null_validation(io.restassured.response.Response)[pri:0, instance:test.test_hotels@7fcf2fc1]" started-at="2022-04-03T02:25:41 PKT" name="hotels_response_not_null_validation" data-provider="sanity" finished-at="2022-04-03T02:25:41 PKT" duration-ms="18" status="PASS">
+        <test-method signature="hotels_response_not_null_validation(io.restassured.response.Response)[pri:0, instance:test.test_hotels@488d1cd7]" started-at="2022-04-03T21:25:55 PKT" name="hotels_response_not_null_validation" data-provider="sanity" finished-at="2022-04-03T21:25:55 PKT" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@186dcb05]]>
+                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@4cd51e4e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hotels_response_not_null_validation -->
-        <test-method signature="hotels_response_time_validation(io.restassured.response.Response)[pri:0, instance:test.test_hotels@7fcf2fc1]" started-at="2022-04-03T02:25:42 PKT" name="hotels_response_time_validation" data-provider="sanity" finished-at="2022-04-03T02:25:42 PKT" duration-ms="3" status="PASS">
+        <test-method signature="hotels_response_time_validation(io.restassured.response.Response)[pri:0, instance:test.test_hotels@488d1cd7]" started-at="2022-04-03T21:25:56 PKT" name="hotels_response_time_validation" data-provider="sanity" finished-at="2022-04-03T21:25:56 PKT" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@2e4b5da1]]>
+                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@eddc9bb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hotels_response_time_validation -->
-        <test-method signature="hotels_status_code_validation(io.restassured.response.Response)[pri:0, instance:test.test_hotels@7fcf2fc1]" started-at="2022-04-03T02:25:44 PKT" name="hotels_status_code_validation" data-provider="sanity" finished-at="2022-04-03T02:25:44 PKT" duration-ms="4" status="PASS">
+        <test-method signature="hotels_status_code_validation(io.restassured.response.Response)[pri:0, instance:test.test_hotels@488d1cd7]" started-at="2022-04-03T21:25:57 PKT" name="hotels_status_code_validation" data-provider="sanity" finished-at="2022-04-03T21:25:57 PKT" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@5da3f32a]]>
+                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@44e4cf8a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hotels_status_code_validation -->
-        <test-method signature="hotels_validate_invalid_url()[pri:0, instance:test.test_hotels@7fcf2fc1]" started-at="2022-04-03T02:25:44 PKT" name="hotels_validate_invalid_url" finished-at="2022-04-03T02:25:45 PKT" duration-ms="1438" status="PASS">
+        <test-method signature="hotels_validate_invalid_url()[pri:0, instance:test.test_hotels@488d1cd7]" started-at="2022-04-03T21:25:57 PKT" name="hotels_validate_invalid_url" finished-at="2022-04-03T21:25:58 PKT" duration-ms="869" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hotels_validate_invalid_url -->
-        <test-method signature="hotels_validate_post_not_successful()[pri:0, instance:test.test_hotels@7fcf2fc1]" started-at="2022-04-03T02:25:45 PKT" name="hotels_validate_post_not_successful" finished-at="2022-04-03T02:25:51 PKT" duration-ms="6048" status="PASS">
+        <test-method signature="hotels_validate_post_not_successful()[pri:0, instance:test.test_hotels@488d1cd7]" started-at="2022-04-03T21:25:58 PKT" name="hotels_validate_post_not_successful" finished-at="2022-04-03T21:25:59 PKT" duration-ms="1209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hotels_validate_post_not_successful -->
-        <test-method signature="hotels_validate_response_without_token()[pri:0, instance:test.test_hotels@7fcf2fc1]" started-at="2022-04-03T02:25:51 PKT" name="hotels_validate_response_without_token" finished-at="2022-04-03T02:25:52 PKT" duration-ms="810" status="PASS">
+        <test-method signature="hotels_validate_response_without_token()[pri:0, instance:test.test_hotels@488d1cd7]" started-at="2022-04-03T21:25:59 PKT" name="hotels_validate_response_without_token" finished-at="2022-04-03T21:26:00 PKT" duration-ms="816" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hotels_validate_response_without_token -->
-        <test-method signature="hotels_validate_with_invalid_token()[pri:0, instance:test.test_hotels@7fcf2fc1]" started-at="2022-04-03T02:25:52 PKT" name="hotels_validate_with_invalid_token" finished-at="2022-04-03T02:25:53 PKT" duration-ms="850" status="PASS">
+        <test-method signature="hotels_validate_with_invalid_token()[pri:0, instance:test.test_hotels@488d1cd7]" started-at="2022-04-03T21:26:00 PKT" name="hotels_validate_with_invalid_token" finished-at="2022-04-03T21:26:00 PKT" duration-ms="661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hotels_validate_with_invalid_token -->
       </class> <!-- test.test_hotels -->
       <class name="test.flights_test">
-        <test-method signature="flights_content_type_header_validation(io.restassured.response.Response)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:15 PKT" name="flights_content_type_header_validation" data-provider="sanity" finished-at="2022-04-03T02:25:15 PKT" duration-ms="159" status="PASS">
+        <test-method signature="flights_content_type_header_validation(io.restassured.response.Response)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:13 PKT" name="flights_content_type_header_validation" data-provider="sanity" finished-at="2022-04-03T21:25:13 PKT" duration-ms="71" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@667dcaad]]>
+                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@331ff3ac]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights_content_type_header_validation -->
-        <test-method signature="flights_invalid_departureFrom_validation(java.lang.String)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:15 PKT" name="flights_invalid_departureFrom_validation" data-provider="negative-departureFrom" finished-at="2022-04-03T02:25:21 PKT" duration-ms="6388" status="PASS">
+        <test-method signature="flights_invalid_departureFrom_validation(java.lang.String)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:13 PKT" name="flights_invalid_departureFrom_validation" data-provider="negative-departureFrom" finished-at="2022-04-03T21:25:15 PKT" duration-ms="1451" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,7 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights_invalid_departureFrom_validation -->
-        <test-method signature="flights_invalid_departureFrom_validation(java.lang.String)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:21 PKT" name="flights_invalid_departureFrom_validation" data-provider="negative-departureFrom" finished-at="2022-04-03T02:25:22 PKT" duration-ms="769" status="PASS">
+        <test-method signature="flights_invalid_departureFrom_validation(java.lang.String)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:15 PKT" name="flights_invalid_departureFrom_validation" data-provider="negative-departureFrom" finished-at="2022-04-03T21:25:15 PKT" duration-ms="766" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,7 +106,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights_invalid_departureFrom_validation -->
-        <test-method signature="flights_invalid_departureFrom_validation(java.lang.String)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:22 PKT" name="flights_invalid_departureFrom_validation" data-provider="negative-departureFrom" finished-at="2022-04-03T02:25:23 PKT" duration-ms="765" status="PASS">
+        <test-method signature="flights_invalid_departureFrom_validation(java.lang.String)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:15 PKT" name="flights_invalid_departureFrom_validation" data-provider="negative-departureFrom" finished-at="2022-04-03T21:25:16 PKT" duration-ms="1036" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights_invalid_departureFrom_validation -->
-        <test-method signature="flights_invalid_departureFrom_validation(java.lang.String)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:23 PKT" name="flights_invalid_departureFrom_validation" data-provider="negative-departureFrom" finished-at="2022-04-03T02:25:24 PKT" duration-ms="828" status="FAIL">
+        <test-method signature="flights_invalid_departureFrom_validation(java.lang.String)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:16 PKT" name="flights_invalid_departureFrom_validation" data-provider="negative-departureFrom" finished-at="2022-04-03T21:25:18 PKT" duration-ms="1304" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -136,7 +136,7 @@ at junit.framework.Assert.failNotEquals(Assert.java:287)
 at junit.framework.Assert.assertEquals(Assert.java:67)
 at junit.framework.Assert.assertEquals(Assert.java:199)
 at junit.framework.Assert.assertEquals(Assert.java:205)
-at test.flights_test.flights_invalid_departureFrom_validation(flights_test.java:187)
+at test.flights_test.flights_invalid_departureFrom_validation(flights_test.java:188)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -171,7 +171,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights_invalid_departureFrom_validation -->
-        <test-method signature="flights_invalid_originID_validation(java.lang.String)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:24 PKT" name="flights_invalid_originID_validation" data-provider="negative-OriginID" finished-at="2022-04-03T02:25:25 PKT" duration-ms="1232" status="PASS">
+        <test-method signature="flights_invalid_originID_validation(java.lang.String)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:18 PKT" name="flights_invalid_originID_validation" data-provider="negative-OriginID" finished-at="2022-04-03T21:25:21 PKT" duration-ms="3320" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -182,7 +182,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights_invalid_originID_validation -->
-        <test-method signature="flights_invalid_originID_validation(java.lang.String)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:25 PKT" name="flights_invalid_originID_validation" data-provider="negative-OriginID" finished-at="2022-04-03T02:25:26 PKT" duration-ms="748" status="PASS">
+        <test-method signature="flights_invalid_originID_validation(java.lang.String)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:21 PKT" name="flights_invalid_originID_validation" data-provider="negative-OriginID" finished-at="2022-04-03T21:25:22 PKT" duration-ms="640" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -193,7 +193,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights_invalid_originID_validation -->
-        <test-method signature="flights_invalid_originID_validation(java.lang.String)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:26 PKT" name="flights_invalid_originID_validation" data-provider="negative-OriginID" finished-at="2022-04-03T02:25:27 PKT" duration-ms="1235" status="PASS">
+        <test-method signature="flights_invalid_originID_validation(java.lang.String)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:22 PKT" name="flights_invalid_originID_validation" data-provider="negative-OriginID" finished-at="2022-04-03T21:25:23 PKT" duration-ms="837" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -204,7 +204,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights_invalid_originID_validation -->
-        <test-method signature="flights_invalid_originID_validation(java.lang.String)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:27 PKT" name="flights_invalid_originID_validation" data-provider="negative-OriginID" finished-at="2022-04-03T02:25:28 PKT" duration-ms="1248" status="PASS">
+        <test-method signature="flights_invalid_originID_validation(java.lang.String)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:23 PKT" name="flights_invalid_originID_validation" data-provider="negative-OriginID" finished-at="2022-04-03T21:25:24 PKT" duration-ms="1279" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -215,7 +215,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights_invalid_originID_validation -->
-        <test-method signature="flights_json_schema_validation(java.lang.String)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:28 PKT" name="flights_json_schema_validation" data-provider="schema" finished-at="2022-04-03T02:25:30 PKT" duration-ms="2143" status="PASS">
+        <test-method signature="flights_json_schema_validation(java.lang.String)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:24 PKT" name="flights_json_schema_validation" data-provider="schema" finished-at="2022-04-03T21:25:25 PKT" duration-ms="1124" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -226,66 +226,167 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights_json_schema_validation -->
-        <test-method signature="flights_response_not_null_validation(io.restassured.response.Response)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:32 PKT" name="flights_response_not_null_validation" data-provider="sanity" finished-at="2022-04-03T02:25:32 PKT" duration-ms="9" status="PASS">
+        <test-method signature="flights_response_not_null_validation(io.restassured.response.Response)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:26 PKT" name="flights_response_not_null_validation" data-provider="sanity" finished-at="2022-04-03T21:25:26 PKT" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@3f45dfec]]>
+                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@39b85a73]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights_response_not_null_validation -->
-        <test-method signature="flights_response_time_validation(io.restassured.response.Response)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:33 PKT" name="flights_response_time_validation" data-provider="sanity" finished-at="2022-04-03T02:25:33 PKT" duration-ms="9" status="PASS">
+        <test-method signature="flights_response_time_validation(io.restassured.response.Response)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:26 PKT" name="flights_response_time_validation" data-provider="sanity" finished-at="2022-04-03T21:25:26 PKT" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@2e0516a3]]>
+                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@35fb3209]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights_response_time_validation -->
-        <test-method signature="flights_status_code_validation(io.restassured.response.Response)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:34 PKT" name="flights_status_code_validation" data-provider="sanity" finished-at="2022-04-03T02:25:34 PKT" duration-ms="5" status="PASS">
+        <test-method signature="flights_status_code_validation(io.restassured.response.Response)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:27 PKT" name="flights_status_code_validation" data-provider="sanity" finished-at="2022-04-03T21:25:27 PKT" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@45dc7be]]>
+                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@2676d96a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights_status_code_validation -->
-        <test-method signature="flights_verify_date_format_response(io.restassured.response.Response)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:35 PKT" name="flights_verify_date_format_response" data-provider="sanity" finished-at="2022-04-03T02:25:35 PKT" duration-ms="9" status="PASS">
+        <test-method signature="flights_verify_date_format_response(io.restassured.response.Response)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:28 PKT" name="flights_verify_date_format_response" data-provider="sanity" finished-at="2022-04-03T21:25:28 PKT" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@66e12c3b]]>
+                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@6d4502ca]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights_verify_date_format_response -->
-        <test-method signature="flights_verify_price_format_response(io.restassured.response.Response)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:36 PKT" name="flights_verify_price_format_response" data-provider="sanity" finished-at="2022-04-03T02:25:36 PKT" duration-ms="7" status="PASS">
+        <test-method signature="flights_verify_errors_empty_body()[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:28 PKT" name="flights_verify_errors_empty_body" finished-at="2022-04-03T21:25:29 PKT" duration-ms="775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flights_verify_errors_empty_body -->
+        <test-method signature="flights_verify_future_date_departureTO()[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:29 PKT" name="flights_verify_future_date_departureTO" finished-at="2022-04-03T21:25:38 PKT" duration-ms="8787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flights_verify_future_date_departureTO -->
+        <test-method signature="flights_verify_invalid_adults(int)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:38 PKT" name="flights_verify_invalid_adults" data-provider="negative-adults" finished-at="2022-04-03T21:25:39 PKT" duration-ms="1288" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@197d5a87]]>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flights_verify_invalid_adults -->
+        <test-method signature="flights_verify_invalid_adults(int)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:39 PKT" name="flights_verify_invalid_adults" data-provider="negative-adults" finished-at="2022-04-03T21:25:40 PKT" duration-ms="753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flights_verify_invalid_adults -->
+        <test-method signature="flights_verify_invalid_adults(int)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:40 PKT" name="flights_verify_invalid_adults" data-provider="negative-adults" finished-at="2022-04-03T21:25:41 PKT" duration-ms="661" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flights_verify_invalid_adults -->
+        <test-method signature="flights_verify_invalid_adults(int)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:41 PKT" name="flights_verify_invalid_adults" data-provider="negative-adults" finished-at="2022-04-03T21:25:41 PKT" duration-ms="753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2100000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flights_verify_invalid_adults -->
+        <test-method signature="flights_verify_invalid_cabin_values(java.lang.String)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:41 PKT" name="flights_verify_invalid_cabin_values" data-provider="negative-cabin" finished-at="2022-04-03T21:25:42 PKT" duration-ms="787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flights_verify_invalid_cabin_values -->
+        <test-method signature="flights_verify_invalid_cabin_values(java.lang.String)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:42 PKT" name="flights_verify_invalid_cabin_values" data-provider="negative-cabin" finished-at="2022-04-03T21:25:43 PKT" duration-ms="1209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ECO]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flights_verify_invalid_cabin_values -->
+        <test-method signature="flights_verify_invalid_cabin_values(java.lang.String)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:43 PKT" name="flights_verify_invalid_cabin_values" data-provider="negative-cabin" finished-at="2022-04-03T21:25:44 PKT" duration-ms="696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@#$!#]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flights_verify_invalid_cabin_values -->
+        <test-method signature="flights_verify_negative_child_lower_boundry()[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:44 PKT" name="flights_verify_negative_child_lower_boundry" finished-at="2022-04-03T21:25:45 PKT" duration-ms="724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flights_verify_negative_child_lower_boundry -->
+        <test-method signature="flights_verify_negative_child_upper_boundry()[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:45 PKT" name="flights_verify_negative_child_upper_boundry" finished-at="2022-04-03T21:25:45 PKT" duration-ms="653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flights_verify_negative_child_upper_boundry -->
+        <test-method signature="flights_verify_negative_infants_lower_boundry()[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:45 PKT" name="flights_verify_negative_infants_lower_boundry" finished-at="2022-04-03T21:25:46 PKT" duration-ms="1020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flights_verify_negative_infants_lower_boundry -->
+        <test-method signature="flights_verify_negative_infants_upper_boundry()[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:46 PKT" name="flights_verify_negative_infants_upper_boundry" finished-at="2022-04-03T21:25:47 PKT" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flights_verify_negative_infants_upper_boundry -->
+        <test-method signature="flights_verify_price_format_response(io.restassured.response.Response)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:48 PKT" name="flights_verify_price_format_response" data-provider="sanity" finished-at="2022-04-03T21:25:48 PKT" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@998fbd4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flights_verify_price_format_response -->
-        <test-method signature="flights_verify_updatedAt_format_response(io.restassured.response.Response)[pri:0, instance:test.flights_test@6853425f]" started-at="2022-04-03T02:25:37 PKT" name="flights_verify_updatedAt_format_response" data-provider="sanity" finished-at="2022-04-03T02:25:37 PKT" duration-ms="4" status="PASS">
+        <test-method signature="flights_verify_updatedAt_format_response(io.restassured.response.Response)[pri:0, instance:test.flights_test@6c0d7c83]" started-at="2022-04-03T21:25:49 PKT" name="flights_verify_updatedAt_format_response" data-provider="sanity" finished-at="2022-04-03T21:25:49 PKT" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@3df04fa1]]>
+                <![CDATA[io.restassured.internal.RestAssuredResponseImpl@46b2a11a]]>
               </value>
             </param>
           </params>

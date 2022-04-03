@@ -168,6 +168,7 @@ public class flights_test {
 		return new Object[] {"2022-0s-34","2022-0","1987-04-34"," "};
 	}
 
+	@SuppressWarnings("unchecked")
 	@Test(dataProvider ="negative-departureFrom" )
 	public void flights_invalid_departureFrom_validation(String date) throws ParseException {
 		
@@ -234,6 +235,204 @@ public class flights_test {
 		
 		  
 	 }
+	@Test
+	public void flights_verify_errors_empty_body() {
+		baseURI="https://www.almosafer.com";
+		JSONObject res=new JSONObject();
+		Response response= given().header("Content-Type","application/json;charset=UTF-8")
+				.basePath("/api/v3/flights/flight/get-fares-calender")
+		.body(res.toString())
+		.when()
+		.post()
+		.then().extract().response();
+		//response.prettyPrint();
+		JsonPath jp=response.jsonPath();
+		Assert.assertEquals(jp.getInt("status"), 400);
+		Assert.assertEquals(jp.getString("title").contains("Bad Request"), true);
+		ArrayList cabin=jp.get("detail.cabin");
+		Assert.assertEquals(cabin.get(0), "The cabin must be a string.");
+		Assert.assertEquals(cabin.get(1), "The cabin field is required.");
+		ArrayList stops=jp.get("detail.stops");
+		Assert.assertEquals(stops.get(0), "The stops must be an array.");
+		ArrayList airline=jp.get("detail.airline");
+		Assert.assertEquals(airline.get(0), "The airline must be an array.");
+		ArrayList pax=jp.get("detail.pax");
+		Assert.assertEquals(pax.get(0), "The pax must be an array.");
+		ArrayList pax1=jp.get("detail.\"pax.adult\"");
+		Assert.assertEquals(pax1.get(0), "The pax.adult field is required.");
+		String type=jp.get("type");
+		Assert.assertEquals(type, "https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html");
+		
+	}
+	
+	@DataProvider(name = "negative-adults")
+	public Object[] get_negative_negative_adults_lower_boundry() {
+		return new Object[] {0,-1,10,2100000};
+	}
+	
+	@Test(dataProvider = "negative-adults")
+	public void flights_verify_invalid_adults(int adults) {
+		LocalDate dep_to = LocalDate.now();
+		LocalDate dep_from=LocalDate.now().plusDays(4);
+		//request body JSON
+		flights fl=new flights("RUH","JED",dep_to.toString(),dep_from.toString(),"Economy",adults,0,0);
+		JSONObject res=new JSONObject();
+		res=fl.rest_body();
+		baseURI="https://www.almosafer.com";
+		Response response= given().header("Content-Type","application/json;charset=UTF-8")
+				.basePath("/api/v3/flights/flight/get-fares-calender")
+		.body(res)
+		.when()
+		.post()
+		.then().extract().response();
+		//response.prettyPrint();
+		JsonPath jp=response.jsonPath();
+		Assert.assertEquals(jp.getInt("status"), 400);
+		Assert.assertEquals(jp.getString("title").contains("Bad Request"), true);
+		ArrayList pax1=jp.get("detail.\"pax.adult\"");
+		//Assert.assertEquals(pax1.get(0), "The pax.adult must be at least 1.");
+		pax1.get(0).equals(anyOf(is("The pax.adult must be at least 1."),is("The pax.adult may not be greater than 9.")));
+		
+	}
+	
+	@Test
+	public void flights_verify_negative_infants_upper_boundry() {
+		//verify if 100 infants can be entered
+		LocalDate dep_to = LocalDate.now();
+		LocalDate dep_from=LocalDate.now().plusDays(4);
+		flights fl=new flights("RUH","JED",dep_to.toString(),dep_from.toString(),"Economy",1,1,100);
+		JSONObject res=new JSONObject();
+		res=fl.rest_body();
+		baseURI="https://www.almosafer.com";
+		Response response= given().header("Content-Type","application/json;charset=UTF-8")
+				.basePath("/api/v3/flights/flight/get-fares-calender")
+		.body(res)
+		.when()
+		.post()
+		.then().extract().response();
+		response.prettyPrint();
+		JsonPath jp=response.jsonPath();
+		Assert.assertEquals(jp.getInt("status"), 400);
+		Assert.assertEquals(jp.getString("title").contains("Bad Request"), true);
+		ArrayList pax1=jp.get("detail.\"pax.infant\"");
+		Assert.assertEquals(pax1.get(0), "The pax.infant may not be greater than 9.");
+	}
+	
+	
+	@Test
+	public void flights_verify_negative_infants_lower_boundry() {
+		//verify if -ve numbers in infants can be entered
+		LocalDate dep_to = LocalDate.now();
+		LocalDate dep_from=LocalDate.now().plusDays(4);
+		flights fl=new flights("RUH","JED",dep_to.toString(),dep_from.toString(),"Economy",1,1,-1);
+		JSONObject res=new JSONObject();
+		res=fl.rest_body();
+		baseURI="https://www.almosafer.com";
+		Response response= given().header("Content-Type","application/json;charset=UTF-8")
+				.basePath("/api/v3/flights/flight/get-fares-calender")
+		.body(res)
+		.when()
+		.post()
+		.then().extract().response();
+		response.prettyPrint();
+		JsonPath jp=response.jsonPath();
+		Assert.assertEquals(jp.getInt("status"), 400);
+		Assert.assertEquals(jp.getString("title").contains("Bad Request"), true);
+		ArrayList pax1=jp.get("detail.\"pax.infant\"");
+		Assert.assertEquals(pax1.get(0), "The pax.infant must be at least 0.");
+	}
 
+	@Test
+	public void flights_verify_negative_child_upper_boundry() {
+		//verify if 100 children can be entered
+		LocalDate dep_to = LocalDate.now();
+		LocalDate dep_from=LocalDate.now().plusDays(4);
+		flights fl=new flights("RUH","JED",dep_to.toString(),dep_from.toString(),"Economy",1,100,0);
+		JSONObject res=new JSONObject();
+		res=fl.rest_body();
+		baseURI="https://www.almosafer.com";
+		Response response= given().header("Content-Type","application/json;charset=UTF-8")
+				.basePath("/api/v3/flights/flight/get-fares-calender")
+		.body(res)
+		.when()
+		.post()
+		.then().extract().response();
+		//response.prettyPrint();
+		JsonPath jp=response.jsonPath();
+		Assert.assertEquals(jp.getInt("status"), 400);
+		Assert.assertEquals(jp.getString("title").contains("Bad Request"), true);
+		ArrayList pax1=jp.get("detail.\"pax.child\"");
+		Assert.assertEquals(pax1.get(0), "The pax.child may not be greater than 9.");
+	}
+	
+	@Test
+	public void flights_verify_negative_child_lower_boundry() {
+		//verify if 100 children can be entered
+		LocalDate dep_to = LocalDate.now();
+		LocalDate dep_from=LocalDate.now().plusDays(4);
+		flights fl=new flights("RUH","JED",dep_to.toString(),dep_from.toString(),"Economy",1,-1,0);
+		JSONObject res=new JSONObject();
+		res=fl.rest_body();
+		baseURI="https://www.almosafer.com";
+		Response response= given().header("Content-Type","application/json;charset=UTF-8")
+				.basePath("/api/v3/flights/flight/get-fares-calender")
+		.body(res)
+		.when()
+		.post()
+		.then().extract().response();
+		//response.prettyPrint();
+		JsonPath jp=response.jsonPath();
+		Assert.assertEquals(jp.getInt("status"), 400);
+		Assert.assertEquals(jp.getString("title").contains("Bad Request"), true);
+		ArrayList pax1=jp.get("detail.\"pax.child\"");
+		Assert.assertEquals(pax1.get(0), "The pax.child must be at least 0.");
+	}
+	
+	@Test
+	public void flights_verify_future_date_departureTO() {
+		//verify if date is given too much into future
+		LocalDate dep_to = LocalDate.now();
+		flights fl=new flights("RUH","JED",dep_to.toString(),"4122-04-05","Economy",1,0,0);
+		JSONObject res=new JSONObject();
+		res=fl.rest_body();
+		baseURI="https://www.almosafer.com";
+		Response response= given().header("Content-Type","application/json;charset=UTF-8")
+				.basePath("/api/v3/flights/flight/get-fares-calender")
+		.body(res)
+		.when()
+		.post()
+		.then().extract().response();
+		//response.prettyPrint();
+		JsonPath jp=response.jsonPath();
+		Assert.assertEquals(jp.getInt("status"), 500);
+		Assert.assertEquals(jp.getString("title").contains("error 52"), true);
+	}
 
+	@DataProvider(name = "negative-cabin")
+	public Object[] get_negative_economy() {
+		return new Object[] {"0","ECO","@#$!#"};
+	}
+	
+	@Test(dataProvider = "negative-cabin")
+	public void flights_verify_invalid_cabin_values(String cabin) {
+		LocalDate dep_to = LocalDate.now();
+		LocalDate dep_from=LocalDate.now().plusDays(4);
+		//request body JSON
+		flights fl=new flights("RUH","JED",dep_to.toString(),dep_from.toString(),cabin,1,0,0);
+		JSONObject res=new JSONObject();
+		res=fl.rest_body();
+		baseURI="https://www.almosafer.com";
+		Response response= given().header("Content-Type","application/json;charset=UTF-8")
+				.basePath("/api/v3/flights/flight/get-fares-calender")
+		.body(res)
+		.when()
+		.post()
+		.then().extract().response();
+		//response.prettyPrint();
+		JsonPath jp=response.jsonPath();
+		Assert.assertEquals(jp.getInt("status"), 400);
+		Assert.assertEquals(jp.getString("title").contains("Bad Request"), true);
+		ArrayList pax1=jp.get("detail.cabin");
+	    Assert.assertEquals(pax1.get(0).toString().contains("invalid cabin type"),true);
+	}
 }
